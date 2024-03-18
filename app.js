@@ -2,6 +2,10 @@ const express=require('express');
 const app=express();
 port=process.env.PORT || 3000;
 
+app.get('/', (req,res)=>{
+	res.send("This is first page");
+})
+
 app.get('/home', (req,res)=>{
 	res.send("This is home page");
 })
